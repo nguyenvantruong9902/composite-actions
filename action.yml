@@ -1,13 +1,11 @@
 name: Action Workflow
 run-name: ${{ inputs.name }} trigger workflow
 
-on:
-  workflow_call:
-    inputs:
-      name:
-        description: "Name"
-        required: true
-        type: string
+inputs:
+  name:
+    description: "Name"
+    required: true
+    type: string
 
 jobs:
   print-name:
