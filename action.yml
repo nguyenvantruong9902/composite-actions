@@ -14,3 +14,4 @@ runs:
       id: print-name
       run: |
         echo "Name: ${{ inputs.name }}"
+      shell: bash
