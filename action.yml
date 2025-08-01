@@ -1,5 +1,4 @@
 name: Action Workflow
-run-name: ${{ inputs.name }} trigger workflow
 
 inputs:
   name:
