@@ -7,13 +7,10 @@ inputs:
     required: true
     type: string
 
-jobs:
-  print-name:
-    name: Print name
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Print name
-        id: print-name
-        run: |
-          echo "Name: ${{ inputs.name }}"
+runs:
+  using: composite
+  steps:
+    - name: Print name
+      id: print-name
+      run: |
+        echo "Name: ${{ inputs.name }}"
